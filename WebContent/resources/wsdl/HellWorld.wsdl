@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:tns="http://www.example.org/HellWorld/" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HellWorld" 
+targetNamespace="http://www.example.org/HellWorld/"
+xmlns:request="http://www.example.org/HelloWorldRequest"
+xmlns:response="http://www.example.org/HelloWorldResponse">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.example.org/HellWorld/">
+    <xsd:import namespace="http://www.example.org/HelloWorldRequest"
+    	schemaLocation="../xsd/HelloWorldRequest.xsd" />
+    <xsd:import namespace="http://www.example.org/HelloWorldResponse"
+    	schemaLocation="../xsd/HelloWorldResponse.xsd" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="sayGreetingsRequest">
+    <wsdl:part element="request:HelloWorldRequestType" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="sayGreetingsResponse">
+    <wsdl:part element="response:helloWorld_Response" name="parameters"/>
+  </wsdl:message>
+</wsdl:definitions>

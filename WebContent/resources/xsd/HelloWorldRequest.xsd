@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/HelloWorldRequest" 
+	xmlns:tns="http://www.example.org/HelloWorldRequest" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+<xsd:element name="HelloWorldRequestType">
+<xsd:complexType>
+  <xsd:sequence>
+<xsd:element id="name" name="name" maxOccurs="1" minOccurs="1" />
+<xsd:element id="gender" name="gender" maxOccurs="1" minOccurs="1" />
+  </xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</schema>

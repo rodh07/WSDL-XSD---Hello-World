@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/HelloWorldResponse" 
+	xmlns:tns="http://www.example.org/HelloWorldResponse"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified">
+<xsd:element name="helloWorld_Response">
+<xsd:complexType>
+  <xsd:sequence>
+<xsd:element id="greetings" name="greetings" maxOccurs="1" minOccurs="1" />
+  </xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</schema>
